@@ -2,20 +2,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 
 *{
-    font-family: "Fraunces", "serif";
-    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
 }
 
 body{
-    margin: 0;
     background-color: #3b8491fb;
+}
+
+h1{
+    font-family: "Tilt Neon", sans-serif;
+    font-size: 50px;
+    color: #fff;
+}
+
+.header h1:hover{
+    color: #3b8491fb;
+    cursor: pointer;
+}
+
+.header{
+    background-color: #B9DC61;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav_links{
+    list-style: none;
+}
+
+.header .nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav_links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav_links a{
+    font-family: "Tilt Neon", sans-serif;
+    font-size: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .nav_links li a:hover{
+    color: #3b8491fb;
 }
 
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 88vh;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+.contenido{
+    display: flex;
+    padding: 25px 10%;
+    text-align: center;
+    margin: 15px 50px 90px 50px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 32px;
+    box-shadow: 0px 0px 15px 30px #00000033;
+}
+
+.contenido h2{
+    font-family: "Tilt Neon", sans-serif;
+    font-size: 35px;
+    color: #fff;
+    justify-content: left;
+}
+
+.contenido p {
+    font-family: "Tilt Neon", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
 }
 
 .calculadora{
@@ -29,6 +120,8 @@ body{
 }
 
 button{
+    font-family: "Fraunces", "serif";
+    color: #fff;
     cursor: pointer;
     margin: 5px;
     padding: 0;
@@ -52,6 +145,8 @@ button:focus{
 }
 
 .display{
+    font-family: "Fraunces", "serif";
+    color: #fff;
     grid-column: 1 / -1;
     padding: 16px;
     display: flex;
@@ -72,4 +167,10 @@ button:focus{
 
 #valor_anterior{
     font-size: 2em;
+}
+
+.pie_pagina{
+    text-align: center;
+    font-family: "Fraunces", "serif";
+    color: #fff;
 }
