@@ -43,13 +43,21 @@ class Display{
     imprimirValores(){
         this.displayValorActual.textContent = this.valorActual;
         this.displayValorAnterior.textContent = `${this.valorAnterior} ${this.signos[this.tipoOperacion] || ''}`;
+        
     }
 
     calcular(){
         const valorAnterior = parseFloat(this.valorAnterior);
         const valorActual = parseFloat(this.valorActual);
-
-        if(isNaN(valorActual) || isNaN(valorAnterior) ) return 
+    
+        if(isNaN(valorActual) || isNaN(valorAnterior) ) return;
+    
+        // Verificar si el operador es división y el divisor es cero
+        if (this.tipoOperacion === 'dividir' && valorActual === 0) {
+            alert('Error: No se puede dividir entre cero.');
+            return;
+        }
+    
         this.valorActual = this.calculador[this.tipoOperacion](valorAnterior, valorActual);
     }
 }
