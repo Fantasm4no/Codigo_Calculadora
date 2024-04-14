@@ -221,6 +221,8 @@ button:focus{
 }  
 
 img{
+    background-color: #B9DC61;
+    border-radius: 50px;
     margin-left: auto;
     margin-right: auto;
     display: block;
