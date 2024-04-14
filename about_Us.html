@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="Imagenes/logo_cal.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="no_mostrar.js" defer></script>
     <title>Sobre Nosotros</title>
 </head>
 <body>
@@ -26,12 +27,71 @@
         </div>
     </header>
 
+    <section>
+        <div class="titulo">
+            <h1>Objetivos</h1>
+        </div>
+        <div class="contenido">
+            <h2 class="titulo-con-barra" data-barra="barraProgreso1" onmouseover="llenarBarra(this)" onmouseleave="resetearBarra(this)">Desarrollo de la Calculadora Dinámica: </h2>
+            <div class="contenedor-barra">
+                <div class="barra-progreso" id="barraProgreso1"></div>
+            </div>
+            <p id="intro"> <br>
+                1. Implementar la interfaz de la calculadora con botones para números y operaciones. <br><br>
+                2. Utilizar JavaScript para manejar eventos de clic en los botones de la calculadora. <br><br>
+                3. Crear funciones en JavaScript para realizar cálculos y mostrar los resultados en tiempo real. <br><br>
+            </p>
+            <p class="no_mostrar" id="intro">
+                4. Asegurarse de que la calculadora pueda realizar sumas, restas, multiplicaciones y divisiones. <br><br>
+                5. Incorporar animaciones CSS y JavaScript para resaltar las teclas presionadas y mostrar transiciones en los resultados.
+            </p>
+            <button class="boton2"> Ver Más </button>
+        </div>
+    </section>
+
+    <section>  
+        <div class="titulo">
+            <h1>Autores</h1>
+        </div>
+        <div class="contenido">
+            <h2 class="titulo-con-barra" data-barra="barraProgreso" onmouseover="llenarBarra(this)" onmouseleave="resetearBarra(this)">Erick Zhigüe Granda</h2>
+            <div class="contenedor-barra">
+                <div class="barra-progreso" id="barraProgreso"></div>
+            </div>
+            <p><br>
+                Erick Fernando Zhigüe Granda. Nació en el cantón Huaquillas, formó parte de la Escuela de Educación Básica “Primero de Octubre” terminando todo el periodo escolar (2016). 
+                Ingresó en la Unidad Educativa Particular “Unein del Pacífico” terminando todo el bachillerato en ciencias en el 2022.
+                Meses después de terminar el último año de bachillerato aplicó para la UPS (“Universidad Politécnica Salesiana”), donde eligió la carrera de computación. 
+                Motivo por el cual formó parte del departamento de Sistemas en Farmacias MÍA, fue interesante la manera en cómo está dividido y la importancia del mismo.
+            </p>
+            <p class="no_mostrar" id="intro">
+                <img src="Imagenes/EZ.png" alt="Icono" width=auto height=auto><br> Correo: ezhigue@est.ups.edu.ec
+            </p>
+            <button class="boton2"> Ver Más </button>
+        </div>
+    </section>
+
+    <section>
+        <div class="contenido">
+            <h2 class="titulo-con-barra" data-barra="barraProgreso2" onmouseover="llenarBarra(this)" onmouseleave="resetearBarra(this)">Henry Granda López</h2>
+            <div class="contenedor-barra">
+                <div class="barra-progreso" id="barraProgreso2"></div>
+            </div>
+            <p><br>
+                
+            </p>
+            <p class="no_mostrar" id="intro">
+                <img src="Imagenes/EZ.png" alt="Icono" width=auto height=auto><br> Correo: ezhigue@est.ups.edu.ec
+            </p>
+            <button class="boton2"> Ver Más </button>
+    </section>
+
     <footer>
         <div class="pie_pagina">
             <address>
                 © Si quieres contactar con el autor, escribe a
-                <strong><span>huambi123@gmail.com</span></strong> o
-                <strong><span>erickzhigue@gmail.com</span></strong>
+                <strong><span></span>erickzhigue@gmail.com</strong> o
+                <strong><span>huambi123@gmail.com</span></strong>
             </address>
         </div>
     </footer>
