@@ -10,29 +10,5 @@ botonesNumeros.forEach(boton => {
 });
 
 botonesOperadores.forEach(boton => {
-    boton.addEventListener('click', () => display.computar(boton.value))
-});
-
-document.addEventListener('keydown', teclaPresionada => {
-    const tecla = teclaPresionada.key;
-
-    if (!isNaN(tecla)) {
-        // Agregar el número al display
-        display.agregarNumero(tecla);
-    }
-
-    if (tecla === '+' || tecla === '/' || tecla === '*' || tecla === '-') {
-        // Computar la operación
-        display.computar(tecla);
-    }
-
-    if (tecla === 'Enter') {
-        // Realizar el cálculo final
-        display.calcularResultado();
-    }
-
-    if (tecla === 'Escape') {
-        // Limpiar el display
-        display.limpiar();
-    }
+    boton.addEventListener('click', () => display.computar(boton.value));
 });

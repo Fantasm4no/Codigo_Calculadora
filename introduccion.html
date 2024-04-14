@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="logo_cal.jpg">
+    <link rel="icon" type="image/png" href="logo_cal.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="no_mostrar.js" defer></script>
     <title>Inicio</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
                 <li><a href="#">Inicio</a></li>
                 <li><a href="operaciones.html">Operaciones Básicas</a></li>
                 <li><a href="calculadora.html">Calculadora</a></li>
-                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="about_Us.html">Sobre Nosotros</a></li>
             </ul>
         </nav>
         <div class="logo">
@@ -31,39 +32,40 @@
             <h1>Guía del usuario</h1>
         </div>
         <div class="contenido">
-            <h2>Funciones de <br>las teclas</h2>
-            <p>[ 0 ], [ 1 ], [ 2 ], ... [ 9 ] - Teclas numéricas estándar <br><br>
+            <h2 class="titulo-con-barra" data-barra="barraProgreso1" onmouseover="llenarBarra(this)" onmouseleave="resetearBarra(this)">Funciones de las teclas</h2>
+            <div class="contenedor-barra">
+                <div class="barra-progreso" id="barraProgreso1"></div>
+              </div>
+            <p id="intro"><br>[ 0 ], [ 1 ], [ 2 ], ... [ 9 ] - Teclas numéricas estándar <br><br>
                 [ ← ] - Borrar el último carácter <br><br>
-                [ + ] - Adición, [ - ] - Sustracción, [ х ] - Multiplicación, [ ÷ ] - División <br><br>
+                [ + ] - Adición, [ - ] - Sustracción, [ х ] - Multiplicación, [ / ] - División <br><br>
+            </p>
+            <p class="no_mostrar" id="intro">
                 [ . ] - Indicar la cantidad en decimales <br><br>
-                [ C ] - Reinicializar la calculadora
+                [ C ] - Reinicializar la calculadora <br><br>
             </p>
+            <button class="boton2"> Ver Más </button>
         </div>
     </section>
 
     <section>
         <div class="contenido">
-            <h2>Instrucciones usando <br> el teclado</h2>
-            <p>La tecla [Enter] corresponde al signo "igual".<br><br>
-            Para borrar el último carácter introducido se usa la tecla [Backspace] (tecla con una flecha).<br><br>
-            Para introducir el signo de adición se usa la tecla [ + ] arriba o a la derecha del teclado.<br><br>
-            Para introducir el signo de sustracción se usa la tecla [ - ] arriba o a la derecha del teclado.<br><br>
-            Para introducir el signo de multiplicación se usa la tecla [ * ] a la derecha del teclado.<br><br>
-            Para introducir el signo de división se usa la tecla [ / ] a la derecha del teclado.<br><br>
-            Para reinicializar la calculadora se puede usar las teclas [Esc]<br>
+            <h2 class="titulo-con-barra" data-barra="barraProgreso2" onmouseover="llenarBarra(this)" onmouseleave="resetearBarra(this)">Historia de la aparición de las calculadoras</h2>
+            <div class="contenedor-barra">
+                <div class="barra-progreso" id="barraProgreso2"></div>
+            </div>
+            <p><br>El antecesor de la calculadora moderna fue abaco (del latín "abaco" significa "tabla").
+                la aparición de las calculadoras electrónicas modernas comenzó en el siglo XVII con inventos como la máquina de calcular mecánica de Blaise Pascal
+                y la máquina diferencial de Charles Babbage en el siglo XIX. <br><br>
             </p>
-        </div>
-    </section>
-
-    <section>
-        <div class="contenido">
-            <h2>De la historia de la aparición <br> de las calculadoras</h2>
-            <p>El antecesor de la calculadora moderna fue abaco (del latín "abaco" significa "tabla").<br><br>
-                Un abaco fue una tabla con unas cavidades donde se movían las marcas<br><br>
-                de cálculo (unas piedras o pepitas).Dicen que el primer abaco fue notado en<br><br>
-                los pueblos de la Babilonia Antigua hace unos 3 mil años A.C. <br><br> 
-                En la Grecia Antigua, el abaco apareció aproximadamente en el siglo V A.C.
+            <p class="no_mostrar">
+                El verdadero avance llegó en la década de 1960 con la invención de la calculadora electrónica de bolsillo,
+                siendo la calculadora "Cal Tech" la primera en 1967. A partir de entonces, las calculadoras se hicieron cada vez más pequeñas, económicas y potentes,
+                con empresas como Texas Instruments y Hewlett-Packard compitiendo en el mercado. <br><br>
+                <img src="1ra_cal2.png" alt="Calculadora Cal Tech 1967" width="250px" height="300px">
+                Calculadora Cal Tech 1967
             </p>
+            <button class="boton2"> Ver Más </button>
         </div>
     </section>
 
