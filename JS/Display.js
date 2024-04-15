@@ -50,7 +50,7 @@ class Display{
         const valorAnterior = parseFloat(this.valorAnterior);
         const valorActual = parseFloat(this.valorActual);
     
-        if(isNaN(valorActual) || isNaN(valorAnterior) ) return;
+        if (isNaN(valorActual) || isNaN(valorAnterior)) return;
     
         // Verificar si el operador es división y el divisor es cero
         if (this.tipoOperacion === 'dividir' && valorActual === 0) {
@@ -58,6 +58,25 @@ class Display{
             return;
         }
     
-        this.valorActual = this.calculador[this.tipoOperacion](valorAnterior, valorActual);
+        let resultado;
+        switch (this.tipoOperacion) {
+            case 'sumar':
+                resultado = this.calculador.sumar(valorAnterior, valorActual);
+                break;
+            case 'restar':
+                resultado = this.calculador.restar(valorAnterior, valorActual);
+                break;
+            case 'multiplicar':
+                resultado = this.calculador.multiplicar(valorAnterior, valorActual);
+                break;
+            case 'dividir':
+                resultado = this.calculador.dividir(valorAnterior, valorActual);
+                break;
+            default:
+                return;
+        }
+    
+        // Formatear el resultado para mostrar un solo cero si el resultado es cero
+        this.valorActual = resultado === 0 ? '0' : resultado.toString();       
     }
 }
